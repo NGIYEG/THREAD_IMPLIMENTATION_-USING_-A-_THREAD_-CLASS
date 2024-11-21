@@ -1,0 +1,12 @@
+The program illustrate the implementation of a Thread class using a derived class MyThread.Note that the Thread class is imported from the java.lang package hence it is an in built class(it's body is not defined in the program).
+the line #thread.start() starts a new thread, This internally invokes the run() method in a separate thread,hence it is not correct to access the run() method directly using the statement #thread.run()
+
+//more explanation
+MyThread thread=new MyThread();
+thread.start();
+This creates a new, independent thread named Thread and starts it
+processing.Whatever thread does, it does as an independent thread
+
+The method start() initiates the computation (process) of the calling
+thread. It performs some overhead associated with starting a thread and then it invokes
+the run method for the thread
